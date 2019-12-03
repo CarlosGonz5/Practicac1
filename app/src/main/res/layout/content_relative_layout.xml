@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".RelativeLayout"
+    tools:showIn="@layout/activity_relative_layout">
+
+    <Button
+        android:id="@+id/btnC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:layout_centerInParent="true"
+        android:onClick="mensaje"/>
+
+    <Button
+        android:id="@+id/btnNO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NO"
+        android:layout_toLeftOf="@id/btnC"
+        android:layout_above="@id/btnC"
+        android:onClick="mensaje"/>
+
+    <Button
+        android:id="@+id/btnSO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SO"
+        android:layout_toLeftOf="@id/btnC"
+        android:layout_below="@id/btnC"
+        android:onClick="mensaje"/>
+
+    <Button
+        android:id="@+id/btnNE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NE"
+        android:layout_above="@id/btnC"
+        android:layout_toRightOf="@id/btnC"
+        android:onClick="mensaje"/>
+
+    <Button
+        android:id="@+id/btnSE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SE"
+        android:layout_below="@id/btnC"
+        android:layout_toRightOf="@id/btnC"
+        android:onClick="mensaje"/>
+
+    <Button
+        android:id="@+id/btnE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E"
+        android:layout_toRightOf="@id/btnNE"
+        android:layout_below="@id/btnNE"
+        android:onClick="mensaje"/>
+
+    <Button
+        android:id="@+id/btnS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S"
+        android:layout_below="@id/btnSE"
+        android:layout_toLeftOf="@id/btnSE"
+        android:onClick="mensaje"/>
+
+    <Button
+        android:id="@+id/btnO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O"
+        android:layout_toLeftOf="@id/btnNO"
+        android:layout_below="@id/btnNO"
+        android:onClick="mensaje"/>
+
+    <Button
+        android:id="@+id/btnN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="N"
+        android:layout_above="@id/btnNO"
+        android:layout_toRightOf="@id/btnNO"
+        android:onClick="mensaje"/>
+
+    <Button
+        android:id="@+id/btnSiguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGUIENTE"
+        android:onClick="siguiente"/>
+</RelativeLayout>
